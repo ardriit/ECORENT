@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoRent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+<!-- Header -->
+<header class="h-auto xl:h-24 bg-white shadow-lg flex items-center ">
+  <div class="container px-6 xl:px-0 mx-auto flex flex-col xl:flex-row justify-between items-center">
+    <div class="w-full h-24 xl:h-auto flex justify-between items-center">
+      <h1 class="text-5xl font-bold tracking-widest text-brand-green">ECO<span class="text-black">RENT</span></h1>
+        <label for="menu-toggler">
+          <img src="./assets/menu-icon-18.png" alt="Menu Toggler Icon" id="menu-toggler-icon" class="w-8 block xl:hidden" />
+        </label>
+  </div>
+      <input type="checkbox" id="menu-toggler" class="peer block xl:hidden w-8 outline-none border-none appearance-none" />
+      <nav class="w-full xl:w-3/5 py-6 xl:py-0 hidden xl:block peer-checked:block">
+        <ul class="space-y-4 xl:space-y-0 flex flex-col xl:flex-row justify-between items-start xl:items-center">
+          <li class="transitionn nav-link"><a  href="#home">Home</a></li>
+          <li class="transitionn nav-link"><a  href="#order">Find Cars</a></li>
+          <li class="transitionn nav-link"><a  href="#cars">Cars</a></li>
+          <li class="transitionn nav-link"><a  href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </div>
+</header>
+
+  <!-- MainSection -->
+  <main class="  py-20 mx-auto container">
+    <div class="flex flex-col lg:flex-col xl:flex-row  items-stretch ">
+      <div class=" w-full lg:w-3/4 xl:w-1/2   bg-light-green flex flex-col items-center p-6 text-center justify-center gap-4 mx-auto ">
+        <h1 class="text-5xl  font-bold">THE CAR OF YOUR NEEDS IS HERE</h1>
+        <p class="text-xl">Electric cars are all we need for a better future! Save more money, save the world by doing it. </p>
+        <a class="btn" href="#">See more</a>
+      </div>
+      <div class="hidden w-full lg:block xl:block xl:w-1/2   ">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+        <dotlottie-player class="mx-auto " src="https://lottie.host/7b1aa1de-566d-4401-a83c-9f2c20804128/x8HtuSmZxN.json" background="transparent" speed="1" style="width: 520px; height: 520px;" loop autoplay></dotlottie-player>
+      </div>
+    </div>
+  </main>
+
+<!-- Section2 -->
+  <section id="order" class="  relative py-5 lg:py-10 xl:py-20 mx-auto container  flex flex-col " >
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-green to-green-300 shadow-lg transform skew-y-0 lg:-skew-y-1 xl:-skew-y-2 rounded-3xl lg:w-3/4 lg:mx-auto ">
+  </div>
+    <h2 class="relative text-white" >find your ideal car!</h2>
+    
+<form class=" relative grid grid-cols-2 xl:grid-cols-2 justify-items-center lg:w-3/4 lg:mx-auto xl:gap-7 ">
+  
+  <label class=" block w-3/4 lg:w-1/2 xl:w-1/2 ">
+    <span class="text-white font-semibold text-lg  ">Brand</span>
+    <select class="dropdown">
+      <option >MercedesBenz</option>
+      <option>Tesla</option>
+      <option>Volkswagen</option>
+    </select>
+  </label>
+  <label class="block w-3/4 lg:w-1/2 xl:w-1/2 ">
+    <span class="text-white font-semibold text-lg">Model</span>
+    <select class="dropdown">
+      <optgroup label="MercedesBenz">
+      <option>EQC</option>
+      <option>EQE</option>
+      <option>EQS</option>
+    </optgroup>
+    <optgroup label="Tesla">
+      <option>Model X</option>
+      <option>Model Y</option>
+      <option>Model S</option>
+    </optgroup>
+    <optgroup label="Volkswagen">
+      <option>ID.3</option>
+      <option>ID.4</option>
+      <option>ID.5</option>
+    </optgroup>
+    </select>
+  </label>
+  </select>
+  <label class="block w-3/4 lg:w-1/2 xl:w-1/2 ">
+    <span class="text-white font-semibold text-lg">Pick up location</span>
+    <select class= " dropdown">
+      <option>Prishtina Airport</option>
+      <option>Prishtina Center</option>
+      <option>Prishtina Mall</option>
+    </select>
+  </label>
+  <label class="block w-3/4 lg:w-1/2 xl:w-1/2 ">
+    <span class="text-white font-semibold text-lg">Pick Up Date?</span>
+    <input type="date" class="dropdown">
+  </label> 
+  <label class="block w-3/4 lg:w-1/2 xl:w-1/2 ">
+    <span class="text-white font-semibold text-lg">Drop off Location</span>
+    <select class="dropdown">
+      <option>Prishtina Airport</option>
+      <option>Prishtina Center</option>
+      <option>Prishtina Mall</option>
+    </select>
+  </label>
+  <label class="block w-3/4 lg:w-1/2 xl:w-1/2 ">
+    <span class="text-white font-semibold text-lg">Drop off Date?</span>
+    <input type="date" class="dropdown">
+  </label>
+</form>
+<a class="btn relative bg-transparent hover:bg-white border-white text-white" href="#">Search</a>
+
+  </section>
+
+<!-- Section3 -->
+  <section id="cars" class="py-20 mx-auto container   ">
+    <h2>Cars</h2>
+
+    <div class=" grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-x-3 gap-y-8 lg:mx-5   ">
+      
+      <div class="grid grid-cols-1 space-y-8  ">
+        <div class=" flex flex-col card group/a">
+          <h1 class="text-2xl font-bold text-center border-b-2 border-brand-green">Mercedes EQC</h1>
+          <img class="h-0 group-hover/a:h-72 transitionn delay-200 object-cover lg:object-contain" src="/src/assets/mercedes-eqc.jpg" alt="">
+        </div>
+        <div  class="flex flex-col group/b ">
+          <h1 class="  text-2xl font-bold text-center border-b-2 border-brand-green">Mercedes EQE</h1>
+          <img class="h-0 group-hover/b:h-72 transitionn delay-200 object-cover lg:object-contain " src="/src/assets/mercede-eqe.jpg" alt="">
+        </div>
+        <div class="flex flex-col group/c ">
+          <h1 class="  text-2xl font-bold text-center border-b-2 border-brand-green">Mercedes EQS</h1>
+          <img class="h-0 group-hover/c:h-72 transitionn delay-200 object-cover lg:object-contain" src="/src/assets/mercedes-eqs.jpg" alt="">
+        </div>
+      </div> 
+      
+      <div class="grid grid-cols-1 space-y-8">
+        <div class="flex flex-col  group/d "> 
+          <h1 class="  text-2xl font-bold text-center border-b-2 border-brand-green">Tesla X</h1>
+          <img class="h-0 group-hover/d:h-72 transitionn  delay-200  object-cover lg:object-contain " src="/src/assets/tesla-x.jpeg" alt="">
+        </div>
+        <div class="flex flex-col group/e">
+          <h1 class="  text-2xl font-bold text-center border-b-2 border-brand-green">Tesla Y</h1>
+          <img class="h-0 group-hover/e:h-72 transitionn delay-200 object-cover lg:object-contain " src="/src/assets/tesla-y.jpg" alt="">
+        </div>
+        <div class="flex flex-col group/f">
+          <h1 class="  text-2xl font-bold text-center border-b-2 border-brand-green">Tesla S</h1>
+          <img class="h-0 group-hover/f:h-72 transitionn delay-200 object-cover lg:object-contain  " src="/src/assets/tesla-s.png" alt="">
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 space-y-8">
+        <div class="flex flex-col group/g">
+          <h1 class="  text-2xl font-bold text-center border-b-2 border-brand-green ">ID3</h1>
+          <img class="h-0 group-hover/g:h-72 transitionn delay-200 object-cover lg:object-contain " src="/src/assets/id3.jpg" alt="">
+        </div>
+        <div class="flex flex-col group/h">
+          <h1 class="  text-2xl font-bold text-center border-b-2 border-brand-green">ID4</h1>
+          <img class="h-0 group-hover/h:h-72 transitionn delay-200 object-cover lg:object-contain " src="/src/assets/id4.jpeg" alt="">
+        </div>
+        <div class="flex flex-col group/i">
+          <h1 class="  text-2xl font-bold text-center border-b-2 border-brand-green">ID5</h1>
+          <img class="h-0 group-hover/i:h-72 transitionn delay-200 object-cover lg:object-contain " src="/src/assets/id5.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Section4 --> 
+  <section class="my-20 mx-auto py-16 px-16 rounded-lg container bg-light-green">
+    <h2>Why chosing ecorent?</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-16 ">
+      <div class="flex flex-col border gap-8 items-center py-8 px-5 text-center shadow-lg hover:shadow-2xl rounded-lg">
+        <i class="fa-solid fa-tree text-5xl text-green-700 px-3 py-2 shadow-sm shadow-brand-green  border-brand-green rounded-full"></i>
+        <h3 class="text-2xl font-semibold">Ecological</h3>
+        <p class="text-md text-gray-500">Electric cars leave 0 emmisions,for a better nature and future.</p>
+      </div>
+      <div class="flex flex-col border gap-8 items-center py-8 px-5 text-center shadow-lg hover:shadow-2xl rounded-lg">
+        <i class="fa-solid fa-charging-station text-5xl text-green-700 px-3 py-3 shadow-sm  shadow-brand-green  border-brand-green  rounded-full"></i>
+        <h3 class="text-2xl font-semibold">Economic</h3>
+        <p class="text-md text-gray-500">Spend less with electric cars,more destinations less expenses.</p>
+      </div>
+      <div class="flex flex-col border gap-8 items-center py-8 px-5 text-center shadow-lg hover:shadow-2xl rounded-lg">
+        <i class="fa-solid fa-car text-5xl text-green-700  px-3 py-2 shadow-sm shadow-brand-green  border-brand-green  rounded-full"></i>
+        <h3 class="text-2xl font-semibold">Comfort Cars</h3>
+        <p class="text-md text-gray-500">Electric cars are very comfortable to drive on every destination</p>
+      </div>
+      <div class="flex flex-col border gap-8 items-center py-8 px-5 text-center shadow-lg hover:shadow-2xl rounded-lg">
+        <i class="fa-solid fa-shield text-5xl text-green-700  px-3 py-2 shadow-sm shadow-brand-green  border-brand-green  rounded-full"></i>
+        <h3 class="text-2xl font-semibold">Insuarance</h3>
+        <p class="text-md text-gray-500">All cars have full insuarance.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Section5 -->
+  <section id="contact" class=" py-8 xl:py-20 mx-auto pb-0   container">
+    <h2>Contact Us!</h2>
+    <div class="flex   flex-col xl:flex-row items-center gap-4 xl relative h-auto text-center xl:text-left ">
+      <div class="border shadow-xl rounded-xl w-full lg:w-3/4 xl:w-2/3 mx-auto p-5" >
+        <input class=" block w-full xl:w-1/4 bg-gray-100 text-gray-900 mt-6 p-3 rounded-lg focus:outline-none focus:border focus:border-brand-green " type="text" placeholder="Your Name" id="name">
+        <input class=" block w-full xl:w-1/4  bg-gray-100 text-gray-900 mt-6 p-3 rounded-lg focus:outline-none focus:border focus:border-brand-green " type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message*" class=" block w-full  xl:w-1/2  h-32 bg-gray-100 text-gray-900 mt-6 p-3 rounded-lg focus:outline-none focus:border focus:border-brand-green"></textarea>
+        <a class="inline-block btn mt-6  bg-green-600 border-green-600 hover:text-green-600" href="">Send Message</a>
+      </div>
+      <div class=" relative xl:absolute  w-full lg:w-3/4 xl:w-5/12 border space-y-8 bg-green-600 rounded-xl shadow-xl p-5 xl:top-36 xl:right-0   ">
+        <h2 class="text-white mb-0 xl:mb-8">F.A.Q</h2>
+        <details class="open:bg-green-700 
+        open:ring-1 open:ring-black/5  open:shadow-lg p-2 rounded-lg  ">
+          <summary class="text-2xl text-white font-semibold">Can I rent a car without a reservation?</summary>
+          <p class=" mt-2 text-md text-white">Yes, as long as a vehicle is available in the station; however, we recommend making a reservation because no vehicle may be available during busy periods.</p>
+        </details>
+        <details class="open:bg-green-700
+        open:ring-1 open:ring-black/5  open:shadow-lg p-2 rounded-lg  ">
+          <summary class="text-2xl text-white font-semibold">Can anyone besides the reservation applicant drive the car?</summary>
+          <p class=" mt-2 text-md text-white">Yes however, each person who intends to drive the car must present the original documents of a valid driver's license and passport on the day the car will be picked up.</p>
+        </details>
+        <details class="open:bg-green-700
+        open:ring-1 open:ring-black/5  open:shadow-lg p-2 rounded-lg  ">
+          <summary class="text-2xl text-white font-semibold">Can beginner drivers (driving with a driver's license issued less than one year ago) also rent a car?</summary>
+          <p class=" mt-2 text-md text-white">Yes. No restrictions are placed on the date of issuance of the driver's license. We have a large-scale compensation system that beginner drivers can use to rent a vehicle without worries. People with little confidence in their driving skills are also welcome to use our services.</p>
+        </details>
+        <details class="open:bg-green-700
+        open:ring-1 open:ring-black/5  open:shadow-lg p-2 rounded-lg  ">
+          <summary class="text-2xl text-white font-semibold">Can I cancel my reservation?</summary>
+          <p class=" mt-2 text-md text-white">Yes, reservations can be cancelled. Please contact us as soon as possible if you wish to cancel your reservation. The reservation number issued when you made the reservation and the email address you registered at the time of reservation are required to cancel or make changes to your reservation.</p>
+        </details>
+      </div>
+    </div>
+</section>
+<!-- Footer -->
+  <footer class="mx-auto mt-5 xl:mt-64  py-0 lg:py-5 xl:py-20 border-t-2 ">
+<div class="flex flex-col-reverse lg:flex-row xl:flex-row  lg:space-y-3 ">
+  <div class="flex flex-col  justify-around items-center w-full xl:w-2/3 ">
+    <h1 class="text-5xl font-bold tracking-widest text-brand-green">ECO<span class="text-black">RENT</span></h1>
+   <div class="">
+    <span class="text-black inline-block font-semibold mr-1">Address:</span>
+    <address class="inline-block">Prishtine rr.Muharrrem Fejza</address><br>
+    <span class="text-black inline-block font-semibold mr-1">Number:</span>
+    <address class="inline-block">+383-43-999-999</address>
+   </div>
+    <p>&copy;2024 Ecorent Holdings, Inc. All Rights Reserved</p>
+  </div>
+  <div class="flex flex-col items-center xl:text-left text-center w-full xl:w-1/6  ">
+    <ul class="space-y-3">
+      <h3 class="text-2xl font-semibold mb-2">Menu</h3>
+      <li><a class="text-gray-500 text-md transitionn hover:text-brand-green"  href="#home">Home</a></li>
+      <li><a class="text-gray-500 text-md transitionn hover:text-brand-green"  href="#order">Order</a></li>
+      <li><a class="text-gray-500 text-md transitionn hover:text-brand-green"  href="#cars">Cars</a></li>
+      <li><a class="text-gray-500 text-md transitionn hover:text-brand-green"  href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="flex flex-col items-center xl:text-left text-center w-full xl:w-1/4">
+  <ul class="space-y-3">
+    <h3 class="text-2xl font-semibold mb-2">Reservation</h3>
+    <li><a class="text-gray-500 text-md transitionn hover:text-brand-green" href="#">Start Reservation</a></li>
+    <li><a class="text-gray-500 text-md transitionn  hover:text-brand-green" href="">Cancel\Modify Reservation</a></li>
+    <li><a class="text-gray-500 text-md transitionn hover:text-brand-green" href="">Get Reciept</a></li>
+    <li><a class="text-gray-500 text-md transitionn hover:text-brand-green" href="">Custom Reservation</a></li>
+  </ul>
+</div>
+</div>
+   </footer>
+</body>
+</html>

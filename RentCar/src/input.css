@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+    @layer base {
+        h2 {
+          @apply text-4xl font-bold text-center mb-8 uppercase ;
+        }
+    
+
+    }
+    @layer components {
+
+        * {
+            @apply font-roboto;
+        }
+
+        .nav-link {
+            @apply  font-semibold text-xl;
+    
+            &:hover {
+                @apply text-brand-green duration-100;
+            }
+        }
+
+        .btn{
+          @apply inline mx-auto my-5 px-5 py-2 rounded-full bg-brand-green text-lg font-semibold text-white  hover:text-brand-green hover:bg-transparent border-2  border-brand-green transitionn ;
+        }
+    
+
+        .card{
+        @apply flex flex-col 
+        
+           text-2xl font-bold text-center   
+        
+      }
+      .transitionn{
+        @apply transition-all ease-linear duration-500;
+
+      }
+      .dropdown{
+        /* @apply block w-full mt-1 rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 */
+        @apply block w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg border-transparent focus:border-gray-500 focus:bg-white focus:ring-0
+      }
+    }
